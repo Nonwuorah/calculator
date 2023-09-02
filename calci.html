@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="icon" href="logo-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+    <header>
+        <h1>Scientific Calculator</h1>
+    </header>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="sin" onclick="display.value += display.value=Math.sin(display.value) " class="operator">
+                    <input type="button" value="π" onclick="display.value += display.value=3.14159265359 " class="operator">
+                    <input type="button" value="AC" onclick="display.value = '' " class="operatorTop">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) " class="operatorTop">
+                    <input type="button" value="%" onclick="display.value = (parseFloat(display.value) / 100); eval; " class="operatorTop">
+                    <input type="button" value="/" onclick="display.value += '/' " class="operatorRight">
+                </div>
+                <div>
+                    <input type="button" value="cos" onclick="display.value += display.value=Math.cos(display.value) " class="operator">
+                    <input type="button" value="e" onclick="display.value += display.value=2.71828182846 " class="operator">
+                    <input type="button" value="7" onclick="display.value += '7' ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' ">
+                    <input type="button" value="*" onclick="display.value += '*' "class="operatorRight">
+                </div>
+                <div>
+                    <input type="button" value="tan" onclick="display.value += display.value=Math.tan(display.value) " class="operator">
+                    <input type="button" value="√" onclick="display.value += display.value=Math.sqrt(display.value,2) " class="operator">
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="-" onclick="display.value += '-' " class="operatorRight">
+                </div>
+                <div>
+                    <input type="button" value="log" onclick="display.value += display.value=Math.log(display.value) " class="operator">
+                    <input type="button" value="x^y" onclick="display.value += display.value=Math.pow(display.value,2) " class="operator">
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' ">
+                    <input type="button" value="+" onclick="display.value += '+' " class="operatorRight">
+                </div>
+                <div>
+                    <input type="button" value="(" onclick="display.value += '(' " class="operator">
+                    <input type="button" value=")" onclick="display.value += ')' " class="operator">
+                    <input type="button" value="00" onclick="display.value += '00' ">
+                    <input type="button" value="0" onclick="display.value += '0' ">
+                    <input type="button" value="." onclick="display.value += '.' ">
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="operatorRight"> 
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Powered by <span>NEDU</span> © 2023 Company, Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

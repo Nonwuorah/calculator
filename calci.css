@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("/image\ \(11\).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header{
+    background: transparent;
+    background-color: rgba(49, 46, 79, 0.554);
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(189, 177, 43);
+}
+.container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), -8px -8px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+.calculator form input:hover{
+    box-shadow: inset -8px -8px 15px rgba(255, 255, 255, 0.1), inset -8px -8px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+form .display input{
+     text-align: right;
+     flex: 1;
+     font-size: 45px;
+     box-shadow: none;
+}
+form input.double0{
+    width: 145px;
+}
+form input .operator{
+    color: #33ffd8;
+}
+form input.operatorTop{
+    background-color: grey;
+}
+form input.operatorRight{
+    background-color: orange;
+}
+footer{
+    background: transparent;
+    background-color: rgba(49, 46, 79, 0.554);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+a{
+    color: #1bb55eec;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgba(202, 189, 52, 0.233);
+    transition: 0.5s;
+}
+span{
+    color: #33ffd8;
+}
