@@ -82,7 +82,7 @@ form input.operatorRight{
 footer{
     background: transparent;
     background-color: rgba(49, 46, 79, 0.554);
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
