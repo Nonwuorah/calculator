@@ -37,6 +37,9 @@ header{
     background: #3a4452;
     padding: 20px;
     border-radius: 10px;
+    max-width: 90%; /* Added max-width to prevent overflow */
+    max-height: 80vh; /* Added max-height to prevent overflow */
+    overflow: auto; /* Added overflow to allow scrolling if content is too large */
 }
 .calculator form input{
     border: 0;
